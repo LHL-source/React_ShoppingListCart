@@ -2,10 +2,22 @@ import React from "react"
 
 function ListItem (item){
      console.log(item);
+     console.log(" this is item.name:",item.name);
+     console.log(" this is item.name.id:",item.name.id);
+     console.log(" this is item.name.title:",item.name.title);
+
      return (
         <div>
-            <h1>key={item.id}</h1>
-            <h1>naam={item.title}</h1>
+            <li 
+              key={item.name.id}
+              className="list-item"
+          
+              value={item.name.title}
+              >
+
+        
+              {item.name.title}
+            </li>
         </div>
      )
 }

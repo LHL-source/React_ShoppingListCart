@@ -6,8 +6,8 @@ function App() {
   return (
     <div className="App">
 
-      <h1>hello world 7 oct 2022</h1>
-      <p> <List /> </p>
+      <h1>Groceries List on :10 oct 2022</h1>
+       <List /> 
 
        
     </div>

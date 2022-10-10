@@ -8,18 +8,28 @@ class List extends React.Component{
             {id:1, title:"Eggs"},
             {id:2, title:"Cheese"},
             {id:3, title:"Garlic"},
+            {id:4, title:"PindaButter"},
         ],
+      
     }
     }
-    
-    render (){   
-         const newArrayItem = this.state.groceryItems.map((eachItem =>
-            {return <ListItem key={eachItem.id} name={eachItem} />})) 
-        return (
-           
+   
 
+    render (){   
+         
+        return (
             <div>
-            {newArrayItem}
+                <ul>
+                {this.state.groceryItems.map((eachItem =>
+                {return <ListItem
+                          key={eachItem.id} 
+                          name={eachItem}
+                          />
+                           
+                          
+                }
+                )) }
+                </ul>
             </div> 
         )
     }
