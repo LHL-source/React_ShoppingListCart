@@ -1,18 +1,16 @@
 import React from "react"
 
-function ListItem (item){
+function ListItem ({item}){
      console.log(item);
-     console.log(" this is item.name:",item.name);
-     console.log(" this is item.name.id:",item.name.id);
-     console.log(" this is item.name.title:",item.name.title);
-
+     console.log(" this is item.name:",item.id);
+     console.log(" this is item.name.id:",item.item);
+   
      return (
         <div>
             <li 
-              key={item.name.id}
+              key={item.id}
               className="list-item"
-          
-              value={item.name.title}
+              value={item.title}
               >
 
         
