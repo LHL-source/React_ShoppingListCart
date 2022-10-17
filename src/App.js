@@ -1,13 +1,13 @@
 import React from 'react';
-import Container from './components/Container'
+import Container from './components/Container.js'
 
 
 function App() {
   return (
     <div className="App">
 
-      <h1>Groceries List on :10 oct 2022 lala</h1>
-       <Container /> 
+      <h1>function App render :16 oct 2022 lala</h1>
+      <Container /> 
 
        
     </div>
@@ -15,3 +15,5 @@ function App() {
 }
 
 export default App;
+ 
+

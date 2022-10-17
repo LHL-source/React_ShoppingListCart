@@ -1,23 +1,32 @@
 import React from "react"
 
-function ListItem ({item}){
-     console.log(item);
-     console.log(" this is item.name:",item.id);
-     console.log(" this is item.name.id:",item.item);
+function ListItem ({item2}){
+
+   //console.log(" this is from function ListItem item.id:tsog even nies",item.id);
+   //  console.log(" this is from function ListItem item.item:nog even niets",item.item);
    
      return (
         <div>
-            <li 
-              key={item.id}
-              className="list-item"
-              value={item.title}
-              >
+                <li>
+                key={item2.id}
+                className="list-item"
+                value={item2.title}
+                </li>  
 
         
-              {item.name.title}
-            </li>
-        </div>
+             <div>this is from function ListItem</div> 
+           </div> 
+        
      )
 }
 
 export default ListItem
+
+// let op regel 10 t/m 15 :
+//<li>
+// key={item.id}
+// className="list-item"
+// value={item.title}
+//</li>
+//letop regel 15 tussen <div>:
+//{item.title}

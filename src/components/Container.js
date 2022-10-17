@@ -1,6 +1,5 @@
-import React from "react";
-import GroceryList from "./GroceryList";
-
+import React from "react"
+import GroceryList from "./GroceryList.js"
 
 class Container extends React.Component{
     constructor (props){
@@ -14,20 +13,27 @@ class Container extends React.Component{
     }//state
     }//constructor
 
+    
 
     render(){
         return(
                 <div className="container">
                 <header>
-                    <h1>Grocery List 13 october 2020 blablabla</h1>
+                     <h1>This is from class container:Grocery List 13 october 2020 blablabla</h1>
                 </header>
+
                 <main>
-                   <GroceryList
+                    <p>This is from container:This is main of container</p>
+                    
+
+                    <GroceryList
                         items={this.state.groceryItems}
-                    />
+                          />
+
                 </main>
                 </div>
                 )//return
     }//render
 }//component    
 export default Container
+//let op rgel 27:items={this.state.groceryItems}
