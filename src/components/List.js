@@ -1,5 +1,5 @@
  import React from "react"
- //import ListItem from "./ListItem";
+ import ListItem from "./ListItem";
 
 class List extends React.Component{
     
@@ -7,18 +7,19 @@ class List extends React.Component{
          
         return (
             <div>
+                console.log("this is map from class list")
+                
                 <ul className="app-list">
                     
                
                 {this.props.item.map((item1 =>(
-                    //console.log(`eachItem item1:" ${item1}`)
-                    console.log(`eachItem item1:" ${item1}`)
-                    //  <ListItem
-                    //   key={item1.id} 
-                    //   item={item1}
-                    //    />
-                      // console.log("this is map from class list")
-                   )))}
+                   // console.log(`eachItem item1:" ${item1}`) works? no
+                    //console.log(item1) works? yes good job
+                      <ListItem
+                        key={item1.id} 
+                        item={item1}
+                       />
+                       )))} 
                 </ul>
             </div> 
         )

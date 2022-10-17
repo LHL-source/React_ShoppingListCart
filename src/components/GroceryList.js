@@ -6,6 +6,7 @@ function GroceryList({items}){
     return(
         <div className="grocery-List">
             <h2>This is from function GroceryList.js Shopping List</h2>
+           
             <List  item={items}/>
         </div>
     )
@@ -15,3 +16,4 @@ export default GroceryList;
 //let op regel 8 t/m 10 <List 
  //               item={items}
   //              />
+  //regel 10:

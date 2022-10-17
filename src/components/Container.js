@@ -13,8 +13,6 @@ class Container extends React.Component{
     }//state
     }//constructor
 
-    
-
     render(){
         return(
                 <div className="container">
@@ -36,4 +34,4 @@ class Container extends React.Component{
     }//render
 }//component    
 export default Container
-//let op rgel 27:items={this.state.groceryItems}
+
