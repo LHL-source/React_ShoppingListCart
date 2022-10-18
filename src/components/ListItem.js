@@ -1,19 +1,20 @@
 import React from "react"
 
-function ListItem ({item2}){
+function ListItem ({item}){
 
-   console.log(" this is from function ListItem item:",item2);
+   console.log(" this is from function ListItem item:",item);
    //  console.log(" this is from function ListItem item.item:nog even niets",item.item);
    
      return (
         <div>
             <div>this is from function ListItem</div> 
                 <li
-                key={item2.id}
+                key={item.id}
                 className="list-item"
                 //value={item2.title}
                 >
-                  <div>{item2.title}</div>
+                   <div>{item.id} {item.title}</div>
+         
                 </li>  
 
         
