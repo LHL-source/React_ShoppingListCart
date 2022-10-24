@@ -1,6 +1,6 @@
 import React from "react"
 
-function ListItem ({item}){
+function ListItem ({item, clickItem}){
 
    console.log(" this is from function ListItem item:",item);
    //  console.log(" this is from function ListItem item.item:nog even niets",item.item);
@@ -11,6 +11,7 @@ function ListItem ({item}){
                 <li
                 key={item.id}
                 className="list-item"
+                onClick={clickItem}
                 //value={item2.title}
                 >
                    <div>{item.id} {item.title}</div>

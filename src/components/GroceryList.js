@@ -1,19 +1,16 @@
 import React from "react";
 import List from "./List.js";
+import InputField from "./InputField.js";
 
-function GroceryList({items}){
-   // console.log(" this is from func: grocerylist console.log itemS:" , items)//works ? almost items is undefined
+function GroceryList({items, onItemClick, onItemAdd}){
+   
     return(
         <div className="grocery-List">
             <h2>This is from function GroceryList.js Shopping List</h2>
-           
-            <List  item={items}/>
+            <InputField onSubmit = {onItemAdd}/>
+            <List  item={items} onItemClick = {onItemClick}/>
         </div>
     )
 }
 
 export default GroceryList;
-//let op regel 8 t/m 10 <List 
- //               item={items}
-  //              />
-  //regel 10:

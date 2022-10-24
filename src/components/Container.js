@@ -20,19 +20,43 @@ class Container extends React.Component{
     }//state
     }//constructor
 
+    addItemToGroceryList=(title)=>{
+        console.log("this is addItemGroceryList");
+        this.setState({
+                groceryItems:[
+                    ...this.state.groceryItems,
+                    {id:
+                        this.state.groceryItems.length+
+                        this.state.shoppingListItems.length+
+                        1,
+                        title:title,
+                        amount:1,
+                    }//id
+
+                ]//groceryItems
+        })//this.setState
+    }//title
+
+    
+addGroceryItemToCart=(item)=>{
+    console.log(`addGroceryItemToCart:${item.title}`);
+}
+
+
     render(){
         return(
                 <div className="container">
                 <header>
-                     <h1>This is from class container:Grocery List 13 october 2020 blablabla</h1>
+                     <h1>This is from class container:Grocery List 13 october 2020 </h1>
                 </header>
 
                 <main>
-                    <p>This is from container:This is main of container</p>
                     
 
                     <GroceryList
                         items={this.state.groceryItems}
+                        onItemclick={this.state.addGroceryItemToCart}
+                        onItemAdd={this.addItemToGroceryList}
                           />
 
                     <ShoppingCard

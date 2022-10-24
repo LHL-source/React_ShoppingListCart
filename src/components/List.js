@@ -7,7 +7,7 @@ class List extends React.Component{
          
         return (
             <div>
-                console.log("this is map from class list")
+               <p>This is map from class list</p> 
                 
                 <ul className="app-list">
                     
@@ -18,6 +18,7 @@ class List extends React.Component{
                       <ListItem
                         key={item1.id} 
                         item={item1}
+                        clickItem = {()=>this.props.onItemClick(item1)}
                        />
                        )))} 
                 </ul>
